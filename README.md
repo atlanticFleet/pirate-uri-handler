@@ -19,7 +19,9 @@ pirate:zs14l5qpyh7vf94f3vwuqmgrfm9ja8692ps7ztzl5e9xk7u8et0jd99f8k326rqt2htk42kz4
 ## Prerequisites
 
 - Linux OS
-- Additional Linux software: jq yad
+- Additional Linux software
+-   jq: Processes JSON output provided via RPC from Treasure Chest
+-   yad: Makes GUI popup dialog boxes available to Bash scripts
 - Pirate Chain Treasure Chest GUI
 - Pirate Chain Treasure Chest CLI (command line RPC client)
 
