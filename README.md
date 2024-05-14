@@ -38,7 +38,7 @@ git clone https://somewhere/pirate-uri-handler/pirate-uri-handler.git
 ### Install the handler, including any dependencies
 
 ```
-./install.sh
+bash install.sh
 ```
 
 ## Usage
