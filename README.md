@@ -20,12 +20,20 @@ pirate:zs14l5qpyh7vf94f3vwuqmgrfm9ja8692ps7ztzl5e9xk7u8et0jd99f8k326rqt2htk42kz4
 
 - Linux OS
 - Additional Linux software: jq yad
-- Treasure Chest GUI
-- Treasure Chest CLI (command line RPC client)
+- Pirate Chain Treasure Chest GUI
+- Pirate Chain Treasure Chest CLI (command line RPC client)
 
 ## Testing
 
-This software was tested with Ubutnu 22.04 LTS and Firefox web browser. Other operating systems like MacOS and Windows are not supported by this utility, but may be supported either by other Pirate URI handler software or by Treasure Chest itself.
+This software was tested with the following software:
+
+- Ubutnu 22.04 LTS
+- Firefox web browser
+- Pirate Chain Treasure Chest v5.8.1
+
+NOTE: Expected changes in the next release of Treasure Chest with respect to how it handles RPC commands may break this utility. Check back here after the next release of Treasure Chest to see if this utility has been updated to compensate.
+
+Other operating systems like MacOS and Windows are not supported by this utility, but may be supported either by other Pirate URI handler software or by Treasure Chest itself.
 
 ## Installation
 
