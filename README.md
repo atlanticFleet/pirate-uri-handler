@@ -32,7 +32,7 @@ This software was tested with Ubutnu 22.04 LTS and Firefox web browser. Other op
 ### Clone the respository
 
 ```
-git clone https://somewhere/pirate-uri-handler/pirate-uri-handler.git
+git clone https://github.com/atlanticFleet/pirate-uri-handler.git
 ```
 
 ### Install the handler, including any dependencies
