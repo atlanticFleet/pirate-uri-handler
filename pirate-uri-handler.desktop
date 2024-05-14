@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Pirate URI Handler
+Comment=Pirate URI Handler
+GenericName=PirateURIHandler
+Exec=/usr/local/bin/pirate-uri-handler.sh %u
+#Icon=pirate.xpm
+Type=Application
+StartupNotify=true
+StartupWMClass=pirate-uri-handler
+Categories=Utility;
+MimeType=x-scheme-handler/pirate;
+Keywords=PirateURIHandler;
