@@ -35,6 +35,7 @@ sudo apt install -y jq yad
 [ -e ~/.local/share/applications/pirate-qt.desktop ] && \
   sed -i "s/^MimeType/#MimeType/" ~/.local/share/applications/pirate-qt.desktop
 cp pirate-uri-handler.desktop ~/.local/share/applications/
+sudo update-desktop-database
 update-desktop-database ~/.local/share/applications
 
 # Install the "pirate-uri-handler.sh" utility
