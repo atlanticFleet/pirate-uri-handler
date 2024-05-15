@@ -48,6 +48,7 @@ git clone https://github.com/atlanticFleet/pirate-uri-handler.git
 ### Install the handler, including any dependencies
 
 ```
+cd pirate-uri-handler
 bash install.sh
 ```
 
