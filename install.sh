@@ -50,7 +50,8 @@ sudo cp pirate-uri-handler.sh /usr/local/bin/
 touch $netrc
 chmod 600 $netrc
 echo "machine 127.0.0.1" > $netrc
-egrep "rpcuser|rpcpassword" ~/.komodo/PIRATE/PIRATE.conf | sed -e 's/rpcuser=/  login /; s/rpcpassword=/  password /' >> $netrc
+egrep "rpcuser|rpcpassword" ~/.komodo/PIRATE/PIRATE.conf | \
+  sed -e 's/rpcuser=/  login /; s/rpcpassword=/  password /' >> $netrc
 
 # See if the user installed "pirate-cli", telling them to do it if they
 # haven't already
