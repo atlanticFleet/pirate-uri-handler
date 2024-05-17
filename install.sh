@@ -45,7 +45,8 @@ update-desktop-database ~/.local/share/applications
 # Install the "pirate-uri-handler.sh" utility
 sudo cp pirate-uri-handler.sh /usr/local/bin/
 
-# Extract RPC client authentication informationinto a form curl can securely use
+# Extract RPC client authentication information into a form curl can securely
+# use
 touch $netrc
 chmod 600 $netrc
 echo "machine 127.0.0.1" > $netrc
