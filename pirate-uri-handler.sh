@@ -28,8 +28,9 @@
 # either has no embedded blanks or is a quoted string.
 uri="$1"
 
-# Make sure this is not quoted
+# Make sure these are not quoted
 pirate_conf=~/.komodo/PIRATE/PIRATE.conf
+      netrc=~/.komodo/PIRATE/.netrc
 
 window_title="Pirate Chain URI Handler"
 
@@ -60,7 +61,7 @@ rpcpassword=$(grep "^rpcpassword=" "$pirate_conf" | awk -F= '{print $2}')
 # combo boxes. This will only return addresses with positive,
 # non-zero balances.
 addresses_with_balances=$( \
-  curl -s --user "$rpcuser:$rpcpassword" \
+  curl -s --netrc-file $netrc \
     --data-binary '
       { 
         "jsonrpc": "1.0", 

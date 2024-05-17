@@ -9,6 +9,10 @@
 # This script will install the Pirate Chain "pirate-uri-handler.sh" utility
 #
 
+# Make sure these are not quoted
+pirate_conf=~/.komodo/PIRATE/PIRATE.conf
+      netrc=~/.komodo/PIRATE/.netrc
+
 # Introduce ourselves to the user, tell them what we want to do, and nicely
 # handle getting sudo root privileges.
 echo ""
@@ -40,6 +44,12 @@ update-desktop-database ~/.local/share/applications
 
 # Install the "pirate-uri-handler.sh" utility
 sudo cp pirate-uri-handler.sh /usr/local/bin/
+
+# Extract RPC client authentication informationinto a form curl can securely use
+touch $netrc
+chmod 600 $netrc
+echo "machine 127.0.0.1" > $netrc
+egrep "rpcuser|rpcpassword" ~/.komodo/PIRATE/PIRATE.conf | sed -e 's/rpcuser=/  login /; s/rpcpassword=/  password /' >> $netrc
 
 # See if the user installed "pirate-cli", telling them to do it if they
 # haven't already
