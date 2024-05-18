@@ -50,8 +50,6 @@ message=$(urldecode "$uri" | sed -e 's/.*\?message=//; s/\&.*//')
 # Chest's local "PIRATE.conf" configuration file
     rpcbind=$(grep "^rpcbind="     "$pirate_conf" | awk -F= '{print $2}')
     rpcport=$(grep "^rpcport="     "$pirate_conf" | awk -F= '{print $2}')
-    rpcuser=$(grep "^rpcuser="     "$pirate_conf" | awk -F= '{print $2}')
-rpcpassword=$(grep "^rpcpassword=" "$pirate_conf" | awk -F= '{print $2}')
 
 # Pull all addresses with corresponding balances.
 # We have to resort to using curl, because "pirate-cli z_getbalances"
