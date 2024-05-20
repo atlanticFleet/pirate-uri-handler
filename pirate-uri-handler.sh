@@ -41,10 +41,9 @@ function urldecode() {
 }
 
 # Extract the components of the Pirate URI
-   dest=$(urldecode "$uri" | sed -e 's/pirate://; s/\?.*//')
- amount=$(urldecode "$uri" | sed -e 's/.*\?amount=//; s/\&.*//')
-message=$(urldecode "$uri" | sed -e 's/.*\?message=//; s/\&.*//')
-  label=$(urldecode "$uri" | sed -e 's/.*\?label=//; s/\&.*//')
+  dest=$(urldecode "$uri" | sed -e 's/pirate://; s/\?.*//')
+amount=$(urldecode "$uri" | sed -e 's/.*\?amount=//; s/\&.*//')
+  memo=$(urldecode "$uri" | sed -e 's/.*\?memo=//; s/\&.*//')
 
 # Pull RPC connection and authentication parameters from Treasure
 # Chest's local "PIRATE.conf" configuration file
@@ -96,7 +95,7 @@ until [ ]; do
         "$source|$addresses_with_balances" \
         "$dest" \
         "$amount" \
-        "$message" \
+        "$memo" \
   )
 
   # If the user cancels out, deciding not to submit the transaction
@@ -106,10 +105,10 @@ until [ ]; do
   # Extract the Pirate URI components from the user's input. We
   # ignore any additional balance text that might be present in
   # the "source" and "dest" fields.
-   source=$(echo "$response" | awk -F\| '{print $1}' | awk '{print $1}')
-     dest=$(echo "$response" | awk -F\| '{print $2}' | awk '{print $1}')
-   amount=$(echo "$response" | awk -F\| '{print $3}')
-  message=$(echo "$response" | awk -F\| '{print $4}')
+  source=$(echo "$response" | awk -F\| '{print $1}' | awk '{print $1}')
+    dest=$(echo "$response" | awk -F\| '{print $2}' | awk '{print $1}')
+  amount=$(echo "$response" | awk -F\| '{print $3}')
+    memo=$(echo "$response" | awk -F\| '{print $4}')
 
   # If a memo was provided, encode it in hex so the "z_sendmany" command will 
   # accept it
