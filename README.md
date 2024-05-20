@@ -7,7 +7,7 @@ The Pirate Chain privacy cryptocurrency's full node wallet software called "Trea
 Here is an example Pirate URI link in raw form and in link form:
 
 ```
-pirate:zs14l5qpyh7vf94f3vwuqmgrfm9ja8692ps7ztzl5e9xk7u8et0jd99f8k326rqt2htk42kz4y6q4p?amount=0.00000001&message=AMZN%20GIFT&label=Rockin%20Prices%20Crypto
+pirate:zs14l5qpyh7vf94f3vwuqmgrfm9ja8692ps7ztzl5e9xk7u8et0jd99f8k326rqt2htk42kz4y6q4p?amount=0.00000001&memo=AMZN%20GIFT
 ```
 
 Unfortunately, I can't figure out how to embed this URI into Github markdown so it shows it as a clickable link. You can also just copy/paste the above Pirate URI into your web browser's address field.
@@ -15,7 +15,7 @@ Unfortunately, I can't figure out how to embed this URI into Github markdown so 
 Another way to test this is via the Linux command line, as follows:
 
 ```
-xdg-open "pirate:zs14l5qpyh7vf94f3vwuqmgrfm9ja8692ps7ztzl5e9xk7u8et0jd99f8k326rqt2htk42kz4y6q4p?amount=0.00000001&message=AMZN%20GIFT&label=Rockin%20Prices%20Crypto"
+xdg-open "pirate:zs14l5qpyh7vf94f3vwuqmgrfm9ja8692ps7ztzl5e9xk7u8et0jd99f8k326rqt2htk42kz4y6q4p?amount=0.00000001&memo=AMZN%20GIFT"
 ```
 
 ## Authors
