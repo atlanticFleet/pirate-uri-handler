@@ -1,5 +1,9 @@
 # Pirate URI Handler
 
+## Update
+
+ATTENTION: This utility has been deprecated. The Pirate Chain Treasure Chest full node wallet software now does Pirate URI payment link processing natively.
+
 ## Overview
 
 The Pirate Chain privacy cryptocurrency's full node wallet software called "Treasure Chest" is currently unable to process Pirate URIs directly. This utility lets you click on a Pirate URI link on any web page, stages the transaction for you to edit, where you can then optionally submit it to Treasure Chest.
